@@ -52,3 +52,80 @@ Dataset yang digunakan adalah **"Twitter US Airline Sentiment"** yang bersumber 
 ---
 
 ## Struktur Repository
+
+airline-sentiment-nlp-capstone/
+│
+├── data/
+├── notebooks/
+├── src/
+├── models/
+├── reports/
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
+
+
+Untuk penjelasan detail mengenai setiap direktori, silakan lihat [di sini](#penjelasan-struktur). <!-- Atau Anda bisa menyalin penjelasan dari atas -->
+
+---
+
+## Instalasi & Penggunaan
+
+Untuk mereplikasi proyek ini di lingkungan lokal Anda, ikuti langkah-langkah berikut:
+
+1.  **Clone repository ini:**
+    ```bash
+    git clone https://github.com/[NAMA_USER_ANDA]/airline-sentiment-nlp-capstone.git
+    cd airline-sentiment-nlp-capstone
+    ```
+
+2.  **Buat dan aktifkan *virtual environment* (opsional, namun sangat disarankan):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Untuk Windows: venv\Scripts\activate
+    ```
+
+3.  **Instal semua dependensi yang dibutuhkan:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Unduh Dataset:**
+    Unduh dataset dari [Kaggle: Twitter US Airline Sentiment](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment) dan letakkan file `Tweets.csv` di dalam folder `data/raw/`.
+
+5.  **Jalankan Jupyter Notebook:**
+    Buka dan jalankan *notebook* di dalam folder `notebooks/` secara berurutan, dimulai dari `1.0_data_exploration_and_preprocessing.ipynb`.
+    ```bash
+    jupyter notebook
+    ```
+
+---
+
+## Hasil
+
+Model LSTM yang dikembangkan berhasil mencapai performa yang baik dalam mengklasifikasikan sentimen.
+
+*   **Akurasi Pelatihan**: `[MASUKKAN AKURASI TRAINING DI SINI, misal: 95%]`
+*   **Akurasi Validasi**: `[MASUKKAN AKURASI VALIDASI DI SINI, misal: 88%]`
+
+Berikut adalah visualisasi *confusion matrix* dari performa model pada data uji:
+
+![Confusion Matrix](reports/figures/confusion_matrix.png)
+*(Catatan: Gambar ini akan muncul setelah Anda menghasilkan dan menyimpannya di folder yang benar)*
+
+---
+
+## Pengembangan Selanjutnya
+
+Meskipun model saat ini sudah cukup baik, ada beberapa area untuk perbaikan di masa depan:
+*   **Hyperparameter Tuning**: Menggunakan teknik seperti KerasTuner atau GridSearch untuk menemukan kombinasi *hyperparameter* terbaik.
+*   **Menggunakan Model Transformer**: Mengimplementasikan arsitektur yang lebih canggih seperti BERT atau RoBERTa yang dapat memberikan pemahaman konteks yang lebih dalam.
+*   **Penanganan *Class Imbalance***: Jika terdapat ketidakseimbangan kelas, teknik seperti *oversampling* (SMOTE) atau *class weights* dapat diterapkan.
+*   **Deployment**: Menerapkan model sebagai REST API menggunakan Flask atau FastAPI agar dapat diintegrasikan dengan aplikasi lain.
+
+---
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
