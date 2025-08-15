@@ -86,32 +86,30 @@ The project utilizes the **"Twitter US Airline Sentiment"** dataset, originally 
 
 ## 📁 Repository Structure
 
-airline-sentiment-nlp-capstone/
+📂 airline-sentiment-nlp-capstone/
 │
-├── 📂 data/
-│ ├── 📂 raw/
-│ │ └── Tweets.csv # Raw, unmodified dataset
-│ └── 📂 processed/
-│ └── Tweets_processed.csv # Dataset after text cleaning
+├── 📂 data/                    # Contains all data files
+│   ├── 📂 raw/
+│   │   └── 📊 Tweets.csv         # Raw, unmodified dataset from Kaggle
+│   └── 📂 processed/
+│       └── 📊 Tweets_processed.csv # Dataset after text cleaning
 │
-├── 📂 notebooks/
-│ └── main_notebook.ipynb # Main notebook covering all project stages
+├── 📂 models/                  # Stores trained model artifacts
+│   ├── 🤖 lstm_sentiment_model.h5  # The trained Keras model
+│   └── 🗃️ tokenizer.pickle       # The fitted Keras Tokenizer object
 │
-├── 📂 models/
-│ ├── lstm_sentiment_model.h5 # The trained Keras model
-│ └── tokenizer.pickle # The fitted Keras Tokenizer
+├── 📂 notebooks/               # Main project analysis and modeling
+│   └── 📓 main_notebook.ipynb    # Notebook covering all project stages
 │
-├── 📂 reports/
-│ └── 📂 figures/
-│ ├── sentiment_distribution.png
-│ ├── sentiment_by_airline.png
-│ └── confusion_matrix.png
+├── 📂 reports/                 # Generated visualizations and figures
+│   └── 📂 figures/
+│       ├── 🖼️ sentiment_distribution.png
+│       ├── 🖼️ sentiment_by_airline.png
+│       └── 🖼️ confusion_matrix.png
 │
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt # Project dependencies
-
+├── 📜 LICENSE                   # Project's open-source license
+├── 📝 README.md                  # This overview file
+└── 📋 requirements.txt          # List of Python dependencies for the project```
 
 
 ---
