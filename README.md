@@ -86,32 +86,25 @@ The project utilizes the **"Twitter US Airline Sentiment"** dataset, originally 
 
 ## 📁 Repository Structure
 
-📂 airline-sentiment-nlp-capstone/
-│
-├── 📂 data/                    # Contains all data files
-│   ├── 📂 raw/
-│   │   └── 📊 Tweets.csv         # Raw, unmodified dataset from Kaggle
-│   └── 📂 processed/
-│       └── 📊 Tweets_processed.csv # Dataset after text cleaning
-│
-├── 📂 models/                  # Stores trained model artifacts
-│   ├── 🤖 lstm_sentiment_model.h5  # The trained Keras model
-│   └── 🗃️ tokenizer.pickle       # The fitted Keras Tokenizer object
-│
-├── 📂 notebooks/               # Main project analysis and modeling
-│   └── 📓 main_notebook.ipynb    # Notebook covering all project stages
-│
-├── 📂 reports/                 # Generated visualizations and figures
-│   └── 📂 figures/
-│       ├── 🖼️ sentiment_distribution.png
-│       ├── 🖼️ sentiment_by_airline.png
-│       └── 🖼️ confusion_matrix.png
-│
-├── 📜 LICENSE                   # Project's open-source license
-├── 📝 README.md                  # This overview file
-└── 📋 requirements.txt          # List of Python dependencies for the project```
-
-
+This project follows a standardized and modular structure for maximum clarity, reproducibility, and ease of navigation. Below is a robust layout using nested lists that renders cleanly across all platforms.
+📂 data/ — Houses all datasets used in the project.
+raw/ — Contains the original, untouched dataset.
+📄 Tweets.csv: The raw sentiment dataset sourced from Kaggle.
+processed/ — Contains cleaned and prepared data ready for modeling.
+📊 Tweets_processed.csv: The dataset after applying the text preprocessing pipeline.
+📂 models/ — Stores the final, trained model and associated artifacts.
+🤖 lstm_sentiment_model.h5: The saved and trained Keras LSTM model file, ready for inference.
+🗃️ tokenizer.pickle: The Tokenizer object fitted on the training data, essential for correctly processing new text.
+📂 notebooks/ — The heart of the project's analysis and modeling.
+📓 main_notebook.ipynb: A comprehensive Jupyter Notebook that details every step from data loading and EDA to model training, evaluation, and prediction.
+📂 reports/ — Contains all generated outputs like visualizations.
+figures/ — A collection of all saved charts and plots.
+🖼️ sentiment_distribution.png
+🖼️ sentiment_by_airline.png
+🖼️ confusion_matrix.png
+📜 LICENSE — The MIT License file, defining the permissions and limitations for this project.
+📝 README.md — This comprehensive and structured project overview.
+📋 requirements.txt — A list of all Python libraries required to replicate the environment. Can be installed with pip install -r requirements.txt.
 ---
 
 ## 💻 Installation & Usage
