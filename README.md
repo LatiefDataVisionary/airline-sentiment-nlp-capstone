@@ -113,7 +113,7 @@ To replicate this project locally, follow these steps:
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/[Your GitHub Username]/airline-sentiment-nlp-capstone.git
+    git clone https://github.com/LatiefDataVisionary/airline-sentiment-nlp-capstone.git
     cd airline-sentiment-nlp-capstone
     ```
 
