@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Kaggle Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue.svg)](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)
 
-![Project Banner](https://raw.githubusercontent.com/LatiefDataVisionary/airline-sentiment-nlp-capstone/main/reports/figures/banner.png) 
+![Project Banner](https://github.com/LatiefDataVisionary/airline-sentiment-nlp-capstone/blob/main/reports/figures/US_Airline_Sentiment_Analysis_with_Deep_Learning.png) 
 <!-- Optional: You can create a banner image for your project and add it here -->
 
 This repository contains the capstone project for the "Natural Language Processing (NLP) with Deep Learning" course from BISA AI Academy. The project focuses on building and evaluating a Long Short-Term Memory (LSTM) model to perform sentiment analysis on tweets directed at major US airlines.
